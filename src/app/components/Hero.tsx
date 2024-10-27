@@ -26,14 +26,19 @@ export async function Hero() {
     🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-300" />
     <span
       className={cn(
-        `inline bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] text-transparent bg-clip-text sm:bg-clip-text text-sm sm:text-base`
+        `inline bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] text-transparent bg-clip-text text-sm sm:text-base`
       )}
+      style={{
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+      }}
     >
       Introducing Toingg - Exclusive Access
     </span>
     <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
   </AnimatedGradientText>
 </div>
+
 
     <div className="flex justify-center mt-2 px-5 sm:px-8 md:px-16 lg:px-24 text-center">
   <GradualSpacing
