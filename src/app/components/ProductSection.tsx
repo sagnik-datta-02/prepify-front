@@ -58,7 +58,7 @@ export function ProductSection() {
   plugins={[plugin.current]}
   onMouseEnter={plugin.current.stop}
   onMouseLeave={plugin.current.reset}
-  className="w-full max-w-4xl mx-auto" // Center the carousel, full width for mobile, 4xl max on larger screens
+  className="w-full max-w-xl mx-auto" // Center the carousel, full width for mobile, 4xl max on larger screens
 >
   <CarouselContent className="flex items-center">
     {components.map((product, index) => (
@@ -103,9 +103,9 @@ export function ProductSection() {
   </CarouselContent>
   
   {/* Responsive carousel arrows */}
-  <CarouselPrevious className="hidden md:block " />
-  <CarouselNext className="hidden md:block " />
-  
+  <CarouselPrevious className="hidden sm:block " />
+  <CarouselNext className="hidden sm:block " />
+
 </Carousel>
 
 </Carousel>

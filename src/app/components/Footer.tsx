@@ -7,7 +7,7 @@ import { FaYoutube } from "react-icons/fa";
 const Footer: FC = () => {
   return (
     <footer className={cn("bg-white border-t border-gray-200 py-8 text-gray-600")}>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 px-4">
+      <div className="container mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 px-4">
         <div className="p-4 text-center sm:text-left">
           <h2 className="font-bold text-gray-900">Product</h2>
           <ul className="mt-2 space-y-2">
