@@ -103,8 +103,9 @@ export function ProductSection() {
   </CarouselContent>
   
   {/* Responsive carousel arrows */}
-  <CarouselPrevious className="hidden sm:block " />
-  <CarouselNext className="hidden sm:block " />
+  <CarouselPrevious className="hidden md:block " />
+  <CarouselNext className="hidden md:block " />
+  
 </Carousel>
 
 </Carousel>
