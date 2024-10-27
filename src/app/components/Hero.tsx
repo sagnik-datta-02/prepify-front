@@ -19,19 +19,19 @@ export async function Hero() {
         ];
   return (
     <div className="">
-    <div className="z-10 flex h-20 items-center justify-center">
-      <AnimatedGradientText>
-        🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-300" />{" "}
-        <span
-          className={cn(
-            `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
-          )}
-        >
-          Introducing Toingg - Exclusive Access
-        </span>
-        <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-      </AnimatedGradientText>
-    </div>
+    <div className="z-10 flex h-20 items-center justify-center px-4 sm:px-8">
+  <AnimatedGradientText>
+    🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-300" />
+    <span
+      className={cn(
+        `inline bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] text-transparent bg-clip-text text-sm sm:text-base`
+      )}
+    >
+      Introducing Toingg - Exclusive Access
+    </span>
+    <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+  </AnimatedGradientText>
+</div>
     <div className="flex justify-center mt-2 px-5 sm:px-8 md:px-16 lg:px-24 text-center">
   <GradualSpacing
     className="text-center text-sm sm:text-base md:text-lg tracking-tighter font-display font-bold text-gray-500 dark:text-white"
