@@ -105,23 +105,23 @@ export async function Hero() {
 </div>
 
 
-    <div className="w-full bg-white py-10">
-      <div className="text-center text-sm font-medium text-gray-500 mb-5">
-        PARTNERED WITH INNOVATORS LIKE
-      </div>
-      <Marquee speed={30} className="overflow-hidden">
-        <div className="flex items-center justify-center gap-12">
-          {companies.map((logo, index) => (
-            <img
-              key={index}
-              src={logo}
-              alt={`Company logo ${index}`}
-              className="w-16 opacity-60 hover:opacity-100 transition-opacity duration-300"
-            />
-          ))}
-        </div>
-      </Marquee>
+<div className="w-full bg-white py-10 px-4">
+  <div className="text-center text-sm font-medium text-gray-500 mb-5">
+    PARTNERED WITH INNOVATORS LIKE
+  </div>
+  <Marquee speed={30} className="">
+    <div className="flex items-center justify-center gap-8 sm:gap-12 lg:gap-16">
+      {companies.map((logo, index) => (
+        <img
+          key={index}
+          src={logo}
+          alt={`Company logo ${index}`}
+          className="w-12 sm:w-16 lg:w-20 xl:w-24 opacity-60 hover:opacity-100 transition-opacity duration-300"
+        />
+      ))}
     </div>
+  </Marquee>
+</div>
 
     </div>
   );
