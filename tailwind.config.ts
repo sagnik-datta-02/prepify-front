@@ -133,6 +133,14 @@ const config: Config = {
   				'100%': {
   					'background-position': '200%'
   				}
+  			},
+  			'shiny-text': {
+  				'0%, 90%, 100%': {
+  					'background-position': 'calc(-100% - var(--shiny-width)) 0'
+  				},
+  				'30%, 60%': {
+  					'background-position': 'calc(100% + var(--shiny-width)) 0'
+  				}
   			}
   		},
   		animation: {
@@ -144,7 +152,8 @@ const config: Config = {
   			pulse: 'pulse var(--duration) ease-out infinite',
   			orbit: 'orbit calc(var(--duration)*1s) linear infinite',
   			ripple: 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite',
-  			rainbow: 'rainbow var(--speed, 2s) infinite linear'
+  			rainbow: 'rainbow var(--speed, 2s) infinite linear',
+  			'shiny-text': 'shiny-text 8s infinite'
   		}
   	}
   },
