@@ -18,19 +18,19 @@ import GradientButton from "./ButtonComponent";
 const components = [
   {
     title: "Toingg",
-    href: "/docs/products/toingg",
+    href: "#",
     description:
       "Unlock the power of AI-driven voice communications with our customizable AI voice agents.",
   },
   {
     title: "SEO Listing AI",
-    href: "/docs/products/seo-listing-ai",
+    href: "#",
     description:
       "Efficiently manage your email campaigns with AI-powered automation. Send personalized, high-converting emails without the manual effort.",
   },
   {
     title: "Web Scrapper",
-    href: "/docs/products/web-scrapper",
+    href: "#",
     description:
       "Automate data extraction with precision using our AI-based web scraping tool. Ideal for collecting valuable insights from the web to fuel your business decisions.",
   },
