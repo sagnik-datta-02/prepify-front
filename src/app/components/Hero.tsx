@@ -9,19 +9,88 @@ import Ripple from "@/components/ui/ripple";
 import RetroGrid from "@/components/ui/retro-grid";
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
- 
+ import Link from "next/link";
 export async function Hero() {
    
-        const companies = [
-          'https://pgagi.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fais3.6ec9c330.png&w=64&q=75',   // Add your logo URLs here
-          'https://pgagi.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhx.58fbb599.png&w=256&q=75',
-          'https://pgagi.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsocial27.250794ee.png&w=256&q=75',
-          'https://pgagi.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fciek2.d40b3dc1.png&w=128&q=75',
-          'https://pgagi.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faixl2.c907cd59.png&w=128&q=75',
-        ];
+  const reviews = [
+    {
+      name: "Jack",
+      username: "@jack",
+      body: "I've never seen anything like this before. It's amazing. I love it.",
+      img: "https://avatar.vercel.sh/jack",
+    },
+    {
+      name: "Jill",
+      username: "@jill",
+      body: "I don't know what to say. I'm speechless. This is amazing.",
+      img: "https://avatar.vercel.sh/jill",
+    },
+    {
+      name: "John",
+      username: "@john",
+      body: "I'm at a loss for words. This is amazing. I love it.",
+      img: "https://avatar.vercel.sh/john",
+    },
+    {
+      name: "Jane",
+      username: "@jane",
+      body: "I'm at a loss for words. This is amazing. I love it.",
+      img: "https://avatar.vercel.sh/jane",
+    },
+    {
+      name: "Jenny",
+      username: "@jenny",
+      body: "I'm at a loss for words. This is amazing. I love it.",
+      img: "https://avatar.vercel.sh/jenny",
+    },
+    {
+      name: "James",
+      username: "@james",
+      body: "I'm at a loss for words. This is amazing. I love it.",
+      img: "https://avatar.vercel.sh/james",
+    },
+  ];
+  const firstRow = reviews.slice(0, reviews.length / 2);
+const secondRow = reviews.slice(reviews.length / 2);
+ 
+const ReviewCard = ({
+  img,
+  name,
+  username,
+  body,
+}: {
+  img: string;
+  name: string;
+  username: string;
+  body: string;
+}) => {
+  return (
+    <figure
+      className={cn(
+        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        // light styles
+        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+        // dark styles
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+      )}
+    >
+      <div className="flex flex-row items-center gap-2">
+        <img className="rounded-full" width="32" height="32" alt="" src={img} />
+        <div className="flex flex-col">
+          <figcaption className="text-sm font-medium dark:text-white">
+            {name}
+          </figcaption>
+          <p className="text-xs font-medium dark:text-white/40">{username}</p>
+        </div>
+      </div>
+      <blockquote className="mt-2 text-sm">{body}</blockquote>
+    </figure>
+  );
+};  
   return (
     <div className="">
     <div className="z-10 flex h-20 items-center justify-center px-4 sm:px-8">
+      <Link href={'https://constitutional-ai-teacher.vercel.app/'}>
   <AnimatedGradientText>
     🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-300" />
     <span
@@ -33,23 +102,24 @@ export async function Hero() {
         WebkitTextFillColor: 'transparent',
       }}
     >
-      Introducing Toingg - Exclusive Access
+      Introducing Prepia - Exclusive Access
     </span>
     <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
   </AnimatedGradientText>
+  </Link>
 </div>
 
 
     <div className="flex justify-center mt-2 px-5 sm:px-8 md:px-16 lg:px-24 text-center">
   <GradualSpacing
     className="text-center text-sm sm:text-base md:text-lg tracking-tighter font-display font-bold text-gray-500 dark:text-white"
-    text="Start Your AI Journey with us"
+    text="Start Your Learning Journey with us"
   />
 </div>
 <div className="mt-2 px-5 sm:px-8 md:px-16 lg:px-24 text-center">
   <LetterPullup 
     className="font-display break-words text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-black dark:text-white leading-snug sm:leading-tight md:leading-tight lg:leading-[4.5rem]"
-    words={"Your Go-To AI Consultancy"} 
+    words={"From Preparation to Destination"} 
     delay={0.05} 
   />
 </div>
@@ -59,9 +129,9 @@ export async function Hero() {
 <div className="relative  flex min-h-[400px] md:min-h-[500px] w-full flex-col items-center justify-center overflow-visible rounded-lg bg-background">
   <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-4xl md:text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
     <img
-      src="https://pgagi.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.f6baf043.png&w=64&q=75"
+      src="https://i.postimg.cc/HkMpwDKt/Whats-App-Image-2024-10-31-at-1-22-02-AM-removebg-preview.png"
       alt="Logo"
-      className="h-8 md:h-16 w-auto"
+      className="h-12 w-auto md:h-16 "
     />
   </span>
 
@@ -72,7 +142,7 @@ export async function Hero() {
     delay={20}
     radius={80}
   >
-    AI Solutions
+    Article Generator
   </OrbitingCircles>
   <OrbitingCircles
     className="size-[20px] text-center md:size-[30px] border-none bg-transparent"
@@ -80,7 +150,7 @@ export async function Hero() {
     delay={10}
     radius={80}
   >
-    AI Products
+    Practise Tests
   </OrbitingCircles>
 
   {/* Outer Circles (reverse) */}
@@ -90,7 +160,7 @@ export async function Hero() {
     duration={20}
     reverse
   >
-    AI MVP Design
+    Study Planner
   </OrbitingCircles>
   <OrbitingCircles
     className="size-[40px] text-center px-2 md:size-[50px] border-none bg-transparent"
@@ -99,29 +169,27 @@ export async function Hero() {
     delay={20}
     reverse
   >
-    AI Research
+    Virtual Interview
   </OrbitingCircles>
   <RetroGrid angle={40}/>
 </div>
 
 
 <div className="w-full bg-white py-10 px-4">
-  <div className="text-center text-sm font-medium text-gray-500 mb-5">
-    PARTNERED WITH INNOVATORS LIKE
+  <div className="text-center text-3xl font-bold  text-gray-800 mb-5">
+    What Our Learners Say
   </div>
-  <Marquee speed={30} className="">
-    <div className="flex items-center justify-center gap-8 sm:gap-12 lg:gap-16">
-      {companies.map((logo, index) => (
-        <img
-          key={index}
-          src={logo}
-          alt={`Company logo ${index}`}
-          className="w-12 sm:w-16 lg:w-20 xl:w-24 opacity-60 hover:opacity-100 transition-opacity duration-300"
-        />
-      ))}
-    </div>
-  </Marquee>
-</div>
+  <Marquee pauseOnHover className="[--duration:20s]">
+        {firstRow.map((review) => (
+          <ReviewCard key={review.username} {...review} />
+        ))}
+      </Marquee>
+      <Marquee reverse pauseOnHover className="[--duration:20s]">
+        {secondRow.map((review) => (
+          <ReviewCard key={review.username} {...review} />
+        ))}
+      </Marquee>
+      </div>
 
     </div>
   );

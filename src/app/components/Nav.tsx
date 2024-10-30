@@ -34,6 +34,12 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "Organize and schedule your study sessions to stay on top of your goals.",
   },
+  {
+    title: "Virtual Interview",
+    href: "#",
+    description:
+      "Simulate real interviews, get feedback, and improve your responses based on you responses and facial expressions",
+  },
 ];
 
 
@@ -84,7 +90,7 @@ export default function Navbar() {
                         </div>
                         <p className="text-sm leading-tight text-muted-foreground">
                         Prepify
-                        <br/>
+                        <br/><br/>
                         Whether it is for your college exams or your dream job, Prepify offers the best tools and courses to help you succeed. Learn anytime, anywhere with ease!
                         </p>
                       </div>
