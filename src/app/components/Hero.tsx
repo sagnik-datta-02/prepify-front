@@ -89,8 +89,9 @@ const ReviewCard = ({
 };  
   return (
     <div className="">
-    <div className="z-10 flex h-20 items-center justify-center px-4 sm:px-8">
       <Link href={'https://constitutional-ai-teacher.vercel.app/'}>
+    <div className="z-10 flex h-20 items-center justify-center px-4 sm:px-8">
+      
   <AnimatedGradientText>
     🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-300" />
     <span
@@ -106,8 +107,9 @@ const ReviewCard = ({
     </span>
     <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
   </AnimatedGradientText>
-  </Link>
+  
 </div>
+</Link>
 
 
     <div className="flex justify-center mt-2 px-5 sm:px-8 md:px-16 lg:px-24 text-center">
