@@ -13,26 +13,26 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { FiMenu, FiX } from "react-icons/fi"; // Importing hamburger and close icons
+import { FiMenu, FiX } from "react-icons/fi"; 
 import PulsatingButton from "@/components/ui/pulsating-button";
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Toingg",
-    href: "/docs/products/toingg",
+    title: "Article Generator",
+    href: "#",
     description:
-      "Unlock the power of AI-driven voice communications with our customizable AI voice agents. Streamline interactions, automate processes, and boost customer engagement in real-time.",
+      "Generate informative articles on any topic to enhance your knowledge base.",
   },
   {
-    title: "SEO Listing AI",
-    href: "/docs/products/seo-listing-ai",
+    title: "Practice Tests",
+    href: "#",
     description:
-      "Efficiently manage your email campaigns with AI-powered automation. Send personalized, high-converting emails without the manual effort.",
+      "Challenge yourself with timed tests across various topics to track your progress.",
   },
   {
-    title: "Web Scrapper",
-    href: "/docs/products/web-scrapper",
+    title: "Study Planner",
+    href: "#",
     description:
-      "Automate data extraction with precision using our AI-based web scraping tool. Ideal for collecting valuable insights from the web to fuel your business decisions.",
+      "Organize and schedule your study sessions to stay on top of your goals.",
   },
 ];
 
@@ -46,19 +46,18 @@ export default function Navbar() {
 
   return (
     <header className="flex justify-between items-center p-4 bg-white shadow-sm">
-      {/* Logo Section */}
+ 
       <div className="flex items-center">
         <Link href="/">
           <img
-            src="https://pgagi.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.f6baf043.png&w=64&q=75"
+            src="https://i.postimg.cc/HkMpwDKt/Whats-App-Image-2024-10-31-at-1-22-02-AM-removebg-preview.png"
             alt="Logo"
-            className="h-8 w-auto"
+            className=" w-16 h-16"
           />
         </Link>
-        <span className="ml-2 text-lg font-semibold">PGAGI</span>
+        <span className="ml-2 text-lg font-semibold">Prepify</span>
       </div>
 
-      {/* Hamburger Menu Icon */}
       <div className="md:hidden">
         <button
           onClick={toggleMenu}
@@ -68,10 +67,10 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Desktop Navigation Menu */}
+    
       <NavigationMenu className="hidden md:flex">
         <NavigationMenuList className="flex space-x-6">
-          {/* Getting Started Menu */}
+       
           <NavigationMenuItem>
             <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -84,21 +83,20 @@ export default function Navbar() {
                           Who We Are
                         </div>
                         <p className="text-sm leading-tight text-muted-foreground">
-                        PG-AGI
-                        Playing God With Artificial General Intelligence
+                        Prepify
+                        <br/>
+                        Whether it is for your college exams or your dream job, Prepify offers the best tools and courses to help you succeed. Learn anytime, anywhere with ease!
                         </p>
                       </div>
                     </Link>
                   </NavigationMenuLink>
                 </li>
                 <ListItem title="Our Vision">
-                At PGAGI, we believe in a future where AI and human intelligence coexist in harmony, creating a smarter, faster, and better world.
-                </ListItem>
+                To empower every learner to achieve academic and career success, anywhere, anytime.</ListItem>
                 <ListItem title="Our Mission">
-                Empowering Innovation, Shaping Tomorrow - Transforming Businesses through Advanced near AGI Solutions.
-                </ListItem>
+                Prepify delivers accessible, personalized tools and resources to support learners in exams, interviews, and skill-building.</ListItem>
                 <ListItem title="Our Values">
-                Innovation , Collaboration , Integrity , Excellence , Customer Focus
+                Accessibility Innovation Integrity Empowerment Excellence Personalization 
                 </ListItem>
               </ul>
             </NavigationMenuContent>
@@ -106,7 +104,7 @@ export default function Navbar() {
 
           {/* Components Menu */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Prepare</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                 {components.map((component) => (
@@ -130,10 +128,10 @@ export default function Navbar() {
       {/* Action Buttons */}
       <div className="hidden md:flex items-center space-x-4">
         <Link href="#">
-        <PulsatingButton className='bg-white text-black' pulseColor="#FFD700">LLM Token Calculator</PulsatingButton>
+        <PulsatingButton disabled className='bg-white text-black' pulseColor="#FFD700">Virtual Interview - Coming Soon</PulsatingButton>
         </Link>
         <Link href="#">
-        <RainbowButton>Book a Call</RainbowButton>
+        <RainbowButton>Sign In</RainbowButton>
           
         </Link>
       </div>
@@ -155,13 +153,13 @@ export default function Navbar() {
               </li>
               <li>
                 <Link href="#" onClick={toggleMenu} className="block">
-                <PulsatingButton className='bg-white text-black' pulseColor="#FFD700">LLM Token Calculator</PulsatingButton>
+                <PulsatingButton disabled className='bg-white text-black' pulseColor="#FFD700">Virtual Interview - Coming Soon</PulsatingButton>
          
                 </Link>
               </li>
               <li>
                 <Link href="#" onClick={toggleMenu} className="block">
-                <RainbowButton>Book a Call</RainbowButton>
+                <RainbowButton>Sign In</RainbowButton>
                 </Link>
               </li>
             </ul>
