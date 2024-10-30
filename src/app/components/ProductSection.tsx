@@ -48,7 +48,7 @@ export function ProductSection() {
   return (
     <>
     <BlurIn
-    word="Our Products"
+    word="Your Preparation Tools"
     className="text-xl font-bold text-black dark:text-white"
   />
     <div className="w-full flex justify-center">

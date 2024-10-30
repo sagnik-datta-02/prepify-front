@@ -13,8 +13,8 @@ const Footer: FC = () => {
           <ul className="mt-2 space-y-2">
             <li><a href="#" className="hover:text-blue-500">Features</a></li>
             <li><a href="#" className="hover:text-blue-500">Pricing</a></li>
-            <li><a href="#" className="hover:text-blue-500">Documentation</a></li>
-            <li><a href="#" className="hover:text-blue-500">API</a></li>
+            <li><a href="#" className="hover:text-blue-500">Privacy Policy</a></li>
+            
           </ul>
         </div>
         <div className="p-4 text-center sm:text-left">
