@@ -133,8 +133,8 @@ export default function Navbar() {
 
       {/* Action Buttons */}
       <div className="hidden md:flex items-center space-x-4">
-        <Link href="#">
-        <PulsatingButton disabled className='bg-white text-black' pulseColor="#FFD700">Virtual Interview - Coming Soon</PulsatingButton>
+        <Link href="/interview">
+        <PulsatingButton className='bg-white text-black' pulseColor="#FFD700">Virtual Interview (Beta)</PulsatingButton>
         </Link>
         <Link href="#">
         <RainbowButton>Sign In</RainbowButton>
@@ -158,8 +158,8 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="#" onClick={toggleMenu} className="block">
-                <PulsatingButton disabled className='bg-white text-black' pulseColor="#FFD700">Virtual Interview - Coming Soon</PulsatingButton>
+                <Link href="/interview" onClick={toggleMenu} className="block">
+                <PulsatingButton disabled className='bg-white text-black' pulseColor="#FFD700">Virtual Interview (Beta)</PulsatingButton>
          
                 </Link>
               </li>
